@@ -7,7 +7,7 @@
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-group">
-      <kk-recipe-item [recipe]="recipe" (click)="onSelected(recipe)"></kk-recipe-item>
+      <kk-recipe-item *ngFor="let recipe of recipes" [recipe]="recipe" (click)="onSelected(recipe)"></kk-recipe-item>
     </ul>
   </div>
 </div>
