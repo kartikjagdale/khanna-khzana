@@ -3,10 +3,9 @@
     <kk-shopping-list-add></kk-shopping-list-add>
     <hr>
     <ul class="list-group">
-    <template ngFor="let item of items">
-      <a class="list-group-item" style="..." >
+      <a class="list-group-item" *ngFor="let item of items">
+        {{ item.name }}({{ item.amount }})
       </a>
-      </template>
     </ul>
   </div>
 </div>
