@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-xs-12">
+    <a class="btn btn-success">New Recipe</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <kk-recipe-item [recipe]="recipe" (click)="onSelected(recipe)"></kk-recipe-item>
+    </ul>
+  </div>
+</div>
