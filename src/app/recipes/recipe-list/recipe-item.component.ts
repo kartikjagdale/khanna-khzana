@@ -6,7 +6,7 @@ import { Recipe } from '../recipe';
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
-  recipeId: number;
+  recipeId: number = 1;
   constructor() { }
 
   ngOnInit() {

@@ -4,11 +4,11 @@ import { Recipe } from './recipe';
   selector: 'kk-recipes',
   templateUrl: './recipes.component.html'
 })
-export class RecipesComponent implements OnInit {
-  selectedRecipe: Recipe;
-  constructor() { }
+export class RecipesComponent {
+  // // selectedRecipe: Recipe;
+  // constructor() { }
 
-  ngOnInit() {
-  }
+  // ngOnInit() {
+  // }
 
 }
