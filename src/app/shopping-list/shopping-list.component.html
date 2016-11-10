@@ -1,9 +1,9 @@
 <div class="row">
   <div class="col-xs-10">
-    <kk-shopping-list-add></kk-shopping-list-add>
+    <kk-shopping-list-add [item]="selectedItem" (cleared)= "onCleared()"></kk-shopping-list-add>
     <hr>
     <ul class="list-group">
-      <a class="list-group-item" *ngFor="let item of items">
+      <a class="list-group-item" *ngFor="let item of items" (click)="onSelectItem(item)">
         {{ item.name }}({{ item.amount }})
       </a>
     </ul>
