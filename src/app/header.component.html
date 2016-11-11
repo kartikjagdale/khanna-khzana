@@ -13,10 +13,15 @@
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li class="dropdown" kkDropDown>
-          <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+          <a 
+          class="dropdown-toggle" 
+          role="button" 
+          aria-haspopup="true" 
+          aria-expanded="false">Recipe Management <span class="caret"></span>
+          </a>
           <ul class="dropdown-menu">
-            <li><a href="#">LogIn</a></li>
-            <li><a href="#">Other</a></li>
+            <li><a (click)="onStore()">Store Recipe</a></li>
+            <li><a (click)="onFetch()">Retrive Recipe</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">LogOut</a></li>
           </ul>
